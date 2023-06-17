@@ -1,6 +1,6 @@
 import os
 
-PROJECT_NAME=''
+PROJECT_NAME='DJANGO-MAX'
 
 # static configs 
 

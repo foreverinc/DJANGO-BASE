@@ -23,3 +23,10 @@ html,body{
     background-color: var(--background);
     height: 100vh;
 }
+
+.login-btn{
+    padding: .2rem 1rem;
+    background-color: var(--white);
+    text-decoration: none;
+    margin-top: 20px;
+}
