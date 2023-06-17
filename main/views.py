@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 
 def Homepage(request):
-    return render(request, 'index-min.html')
+    return render(request, 'index.html')
