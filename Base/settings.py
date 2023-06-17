@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 from django.contrib import messages
 from .variables import *
-
+from django.contrib.staticfiles.finders import FileSystemFinder
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -212,3 +212,16 @@ EMAIL_USE_TLS = True
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+
+#excluding css
+
+class CustomFileSystemFinder(FileSystemFinder):
+    def list(self, ignore_patterns):
+        ignored = ['style.css', 'alluth.css', 'index.js','toolbar.css','print.css','history.js']
+        return super().list(ignore_patterns + ignored)
+
+STATICFILES_FINDERS = [
+    'Base.settings.CustomFileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
