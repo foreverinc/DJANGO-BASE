@@ -1,7 +1,7 @@
 import os
 
 PROJECT_NAME='DJANGO-MAX'
-
+STATE=True #True in Development and False in Production
 # static configs 
 
 GITHUB_LINK=''
