@@ -1,0 +1,25 @@
+
+:root{
+    --white:#fff;
+    --background:#111827;
+}
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Main*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+    height: 100vh;
+}
