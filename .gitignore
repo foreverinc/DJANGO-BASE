@@ -154,3 +154,9 @@ cython_debug/
 migrations/
 assets/**/*/*.css
 assets/**/*/*.js
+assets/**/*/*.svg
+assets/**/*/*.woff
+assets/**/*/*.txt
+assets/**/*/LICENSE
+assets/**/*/*.md
+
