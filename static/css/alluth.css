@@ -84,7 +84,7 @@ body > div.main > div:nth-child(2) > form > p:nth-child(4){
     align-items: center;
     gap: 1rem;
 }
-.LoginBtn{
+.LoginBtn-prestyled__upset--css{
     border: 1px solid var(--blue);
     font-size: 1.1rem;
     text-align: center;
@@ -96,11 +96,11 @@ body > div.main > div:nth-child(2) > form > p:nth-child(4){
     transition: all .3s ease-in-out;
     color: var(--white) !important;
 }
-.LoginBtn:hover{
+.LoginBtn-prestyled__upset--css:hover{
     background-color: #07318d;
     border: 1px solid #07318d;
 }
-.OutBtn{
+.OutBtn--prestyled__upset--css__customizable{
     border: 1px solid var(--danger);
     font-size: 1.1rem;
     text-align: center;
@@ -112,7 +112,7 @@ body > div.main > div:nth-child(2) > form > p:nth-child(4){
     transition: all .3s ease-in-out;
     color: var(--white) !important;
 }
-.OutBtn:hover{
+.OutBtn--prestyled__upset--css__customizable:hover{
     background-color: #680909;
     border: 1px solid #5c0909;
 }
@@ -126,7 +126,7 @@ body > div.main > div:nth-child(2) > form > p:nth-child(4){
     gap: 1rem;
     margin:30px  auto;
 }
-.last{
+.last--prestyled__upset--css__custom{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,7 +136,7 @@ body > div.main > div:nth-child(2) > form > p:nth-child(4){
     .google-div{
         flex-direction: column;
     }
-    .last{
+    .last--prestyled__upset--css__custom{
         flex-direction: column;
     }
 }
@@ -151,7 +151,7 @@ body > div.main > div:nth-child(2) > form > p:nth-child(4){
     border-radius: 3px;
 }
 
-.last >*{
+.last--prestyled__upset--css__custom >*{
     text-decoration: none;
     color: var(--light-blue);
     font-size: .85rem;

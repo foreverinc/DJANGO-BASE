@@ -1,51 +1,6 @@
 {% extends "account/base.html" %}
-{% load static %}
-
-{% load i18n %}
-{% load account socialaccount %}
-
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
-
-{% block content %}
-
-
-{% get_providers as socialaccount_providers %}
-
-
-
-
-<div class="main">
-	
-	<div>
-		<form class="login log" method="POST" action="{% url 'account_login' %}">
-			{% csrf_token %}
-			
-			{{ form}}
-			
-			{% if redirect_field_value %}
-			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-			{% endif %}
-			<div class="google-div">
-			<button class="primaryAction LoginBtn" type="submit">{% trans "Sign In" %}</button>
-			<span>OR</span>
-
-
-<span>
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-	</span>
-
-  
-</div>
-
-{% include "socialaccount/snippets/login_extra.html" %}
-
-
-		<div class="last">
-			<a class="button secondaryAction forgot" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-			<a href="{{signup_url}}">Create account</a>
-		</div>
-		</form>
-	</div>
-</div>
-
-{% endblock %}
+{% load static %} {% load i18n %}
+{% load account socialaccount %} {% block head_title %}{% trans "Sign In" %}{% endblock %} {% block content %} {% get_providers as socialaccount_providers %} <div class="main"><div><form class="login log" method="POST" action="{% url 'account_login' %}">{% csrf_token %} {{ form}} {% if redirect_field_value %}
+<input type="hidden" name="{{ redirect_field_name}}" value="{{ redirect_field_value}}" />{% endif %}
+<div class="google-div"><button class="primaryAction LoginBtn-prestyled__upset--css" type="submit">{% trans "Sign In" %}</button><span>OR</span><span>{% include "socialaccount/snippets/provider_list.html" with process="login" %}
+</span></div>{% include "socialaccount/snippets/login_extra.html" %} <div class="last--prestyled__upset--css__custom"><a class="button secondaryAction forgot" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a><a href="{{signup_url}}">Create account</a></div></form></div></div>{% endblock %}

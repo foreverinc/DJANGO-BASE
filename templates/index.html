@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<div class="main">
+<div class="starter__index__block__main__css-Axcy">
    <h1>Ready?!! GO!! <span class="material-icons">waving_hand</span></h1><br>
    <span>Created and ready at the go</span> 
    {% if user.is_authenticated %}
-   <a href="{% url 'account_logout' %}" class="login-btn">Logout</a>
+   <a href="{% url 'account_logout' %}" class="login-btn__main__css-prestyled">Logout</a>
    {% else %}
-   <a href="{% url 'account_login' %}" class="login-btn">Login</a>
+   <a href="{% url 'account_login' %}" class="login-btn__main__css-prestyled">Login</a>
    {% endif %}
 </div>
 
